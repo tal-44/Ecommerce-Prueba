@@ -1,0 +1,9 @@
+{
+    "username":"elargo", 
+    "firstName":"Elivar",
+    "lastName":"Largo",
+    "email":"elargo@gmail.com",
+    "address":"10 de agosto y universitaria",
+    "phone":"000000",
+    "userType":"ADMIN"
+}

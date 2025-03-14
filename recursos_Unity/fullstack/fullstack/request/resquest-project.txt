@@ -1,0 +1,52 @@
+JSON USER CREATE
+http://localhost:8085/api/v1/users
+{
+    "username":"elargo",
+    "firstName": "Elivar",
+    "lastName": "Largo",
+    "email": "elargor@gmail.com",
+    "address": "10 de agosto y universitaria",
+    "cellphone": "000000",
+    "userType": "ADMIN"
+}
+
+JSON CATEGORY CREATE
+http://localhost:8085/api/v1/admin/categories
+{
+    "name": "Bebes"
+}
+
+JSON PRODUCT CREATE
+http://localhost:8085/api/v1/admin/products
+{
+    "name": "Televisor1",
+    "code": "158",
+    "description":"televisor de 10 pulgadas",
+    "price": 200,
+    "userId": 1,
+    "categoryId": 1
+}
+http://localhost:8081/api/v1/orders
+
+http://localhost:8085/api/v1/orders
+
+JSON ORDER CREATE
+{
+    "userId": 1,
+	"orderState": "CANCELLED",
+    "orderProducts":[
+        {
+			"productId": 1,
+			"quantity": 2,
+			"price":15
+        },
+        {
+			"productId": 2,
+			"quantity":10,
+			"price":10
+        }
+
+    ]
+   
+}
+

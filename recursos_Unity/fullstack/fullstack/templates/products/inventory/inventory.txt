@@ -1,0 +1,38 @@
+<app-header-admin></app-header-admin>
+
+<!-- Page Content -->
+<div class="container">
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">
+        Spring eCommerce <small>Inventario</small>
+    </h1>
+
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Ver Inventario</li>
+    </ol>
+
+    <a class="btn btn-primary" href=""> Añadir
+        unidades</a>
+    <h2>Inventario</h2>
+    <table class="table">
+        <thead>
+            <th scope="col">Fecha Registro</th>
+            <th scope="col">Entrada/Unidades</th>
+            <th scope="col">Salida/Unidades</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Saldo/Unidades</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of inventories">
+                <td>{{i.dateCreated}}</td>                
+                <td>{{i.unitIn}}</td>
+                <td>{{i.unitOut}}</td>
+                <td>{{i.description}}</td>
+                <td>{{i.balance}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+<!-- /.container -->

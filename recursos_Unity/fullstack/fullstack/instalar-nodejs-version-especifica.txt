@@ -1,0 +1,10 @@
+npm uninstall -g @angular/cli
+
+npm cache clean --force
+
+npm cache verify
+
+npm install -g  @angular/cli@17.0.1
+
+
+https://angular.io/guide/releases

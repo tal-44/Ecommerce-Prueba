@@ -1,0 +1,8 @@
+ <div class="form-group row">
+      <label class="control-label col-sm-2" for="nombre">Elija una categoría:</label>
+      <div class="col-sm-10">
+        <div class="combo-box">
+          
+        </div>
+      </div>
+    </div>
