@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("api/v1/admin/categories")
 @Slf4j
+@CrossOrigin("http://localhost:4200")
 public class CategoryController {
     private final CategoryService categoryService;
 
@@ -19,6 +20,9 @@ public class CategoryController {
 
     @PostMapping
     public ResponseEntity<Category> save(@RequestBody Category category){
+        if (category.getId() == 0) {
+            category.setId(null); // O simplemente no lo asignes
+        }
         return new ResponseEntity<>(categoryService.save(category), HttpStatus.CREATED);
     }
 

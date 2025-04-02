@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Category {
+public class  Category {
     private Integer id;
     private String name;
     private LocalDateTime dateCreated;

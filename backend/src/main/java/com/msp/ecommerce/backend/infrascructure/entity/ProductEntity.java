@@ -32,3 +32,7 @@ public class ProductEntity {
     @ManyToOne
     private CategoryEntity categoryEntity;
 }
+
+
+
+
